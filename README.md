@@ -53,6 +53,7 @@ I have added a few tests for testing this project. The tests follows the example
 
 ## Assumptions Made:
 
+- Assuming all the inputs are sent in the same data type as given in the question's example.
 - For the rule, <i>6 points if the day in the purchase date is odd.</i> I am assuming that by odd you meant if the **Day** is Odd, for example, 01-03-2024 (MM-DD-YYYY), 03 is odd, hence I would add 6 points.
 
 ## General Workflow:
