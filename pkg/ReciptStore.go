@@ -1,7 +1,6 @@
 package pkg
 
 import (
-	"fmt"
 	"math"
 	"receipt-processor-challenge/models"
 	"regexp"
@@ -32,7 +31,6 @@ func (rs *ReciptStore) AddNewRecipt(r models.Recipt) string {
 	id := uuid.New().String()
 	r.ID = id
 	rs.receipts[r.ID] = r
-	fmt.Println("Added new recipt: ", r)
 	return r.ID
 }
 
@@ -85,8 +83,6 @@ func calculatePoints(r models.Recipt) int {
 	if purchaseTime, err := time.Parse("15:04", r.PurchaseTime); err == nil && purchaseTime.Hour() >= 14 && purchaseTime.Hour() <= 16 {
 		purchaseTimeBetween2and4Point = 10
 	}
-
-	fmt.Println("retailNamePoint: ", retailNamePoint, "roundAmountPoint: ", roundAmountPoint, "totalMultipleOf25Point: ", totalMultipleOf25Point, "everyTwoItemsPoint: ", everyTwoItemsPoint, "trimmedDescriptionPoint: ", trimmedDescriptionPoint, "purchaseDateOddDayPoint: ", purchaseDateOddDayPoint, "purchaseTimeBetween2and4Point: ", purchaseTimeBetween2and4Point)
 
 	return retailNamePoint + roundAmountPoint + totalMultipleOf25Point + everyTwoItemsPoint + trimmedDescriptionPoint + purchaseDateOddDayPoint + purchaseTimeBetween2and4Point
 }
