@@ -10,12 +10,21 @@ For this project I am using GO Language.
 
 ## Running the Application
 
-### For Go:
+### From Go Project:
 
 1. Ensure you have Go installed on your machine (Assuming it is already installed as stated in the README).
 2. Clone the repository: `git clone [repository_link]`
 3. Navigate to the project directory: `cd receipt-processor`
 4. Run the application: `go run .`
+
+### From the executable file
+
+1. Ensure you have the executale file which was submitted as an Attached file in the submission link.
+2. Navigate to the file where the executable file is.
+3. Run the following command:
+    - On macOS or Linux, `./receipt-processor-challenge`
+    - On Windoes, `./receipt-processor-challenge.exe`
+            
 
 ## Running Test
 
