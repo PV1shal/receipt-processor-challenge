@@ -17,14 +17,12 @@ For this project I am using GO Language.
 3. Navigate to the project directory: `cd receipt-processor`
 4. Run the application: `go run .`
 
-### From the executable file
+### From the ZIP
 
-1. Ensure you have the executale file which was submitted as an Attached file in the submission link.
-2. Navigate to the file where the executable file is.
-3. Run the following command:
-    - On macOS or Linux, `./receipt-processor-challenge`
-    - On Windoes, `./receipt-processor-challenge.exe`
-            
+1. Ensure you have the executale ZIP file which was submitted as an Attached file in the submission link.
+2. UnZip the Zip file to your desired directory.
+3. Navigate to the project directory: `cd receipt-processor`
+4. Run the application: `go run .
 
 ## Running Test
 
