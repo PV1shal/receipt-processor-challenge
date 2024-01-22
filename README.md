@@ -13,7 +13,7 @@ For this project I am using GO Language.
 ### From Go Project:
 
 1. Ensure you have Go installed on your machine (Assuming it is already installed as stated in the README).
-2. Clone the repository: `git clone [repository_link]`
+2. Clone the repository: `git clone https://github.com/PV1shal/receipt-processor-challenge.git`
 3. Navigate to the project directory: `cd receipt-processor`
 4. Run the application: `go run .`
 
